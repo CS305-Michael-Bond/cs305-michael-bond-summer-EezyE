@@ -58,7 +58,11 @@ perfect_squares = tuple([x**2 for x in range(1, 11)])
 
 exclusions = set(range(5, 50))
 # TODO: replace None with your set
-squares_set = set(perfect_squares) - exclusions
+
+# This didn't pass the test with the current a1_test.py file
+# squares_set = set(perfect_squares) - exclusions
+
+squares_set = set(perfect_squares).intersection(exclusions)
 
 # 4. generators
 # Write a generator function called 'gen_squares' that generates perfect squares.
