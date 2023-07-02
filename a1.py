@@ -29,7 +29,7 @@ def rectangle_area(width, height=False):
 
     """
 
-    if height != False:
+    if height == False:
         height = width
 
     return width * height
