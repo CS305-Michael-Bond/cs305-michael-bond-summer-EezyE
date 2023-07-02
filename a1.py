@@ -57,8 +57,8 @@ perfect_squares = tuple([x**2 for x in range(1, 11)])
 # resulting set to the variable squares_set below.
 
 exclusions = set(range(5, 50))
-squares_set = set(perfect_squares).difference(
-    exclusions)  # TODO: replace None with your set
+# TODO: replace None with your set
+squares_set = set(perfect_squares) - exclusions
 
 # 4. generators
 # Write a generator function called 'gen_squares' that generates perfect squares.
